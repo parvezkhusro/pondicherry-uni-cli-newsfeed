@@ -29,14 +29,12 @@ for row in right_table.findAll("tr"):
     
     if len(title)==1:
         A.append(title[0].find(text=True))
-        #B.append(cells[0].find(text=True))
-        C.append(date[2].find(text=True).strip())
+        B.append(date[2].find(text=True).strip())
 
 
 
 df=pd.DataFrame(A,columns=['Title'])
-#df['News type']=B
-df['Date']=C
+df['Date']=B
 
 print df
 
