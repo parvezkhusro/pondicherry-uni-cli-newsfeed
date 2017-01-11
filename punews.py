@@ -5,6 +5,7 @@ import pandas as pd
 import urllib2
 from bs4 import BeautifulSoup
 import datetime
+import webbrowser
 
 now = datetime.datetime.now()
 urlpu = "http://www.pondiuni.edu.in/newsarchive/"+str(now.year)+str(format(now.month, '02d'))
@@ -38,3 +39,8 @@ df['Date']=B
 
 print df
 
+print; print "Open in Web Browser? (y/n)"
+inp = raw_input()
+
+if any([inp == 'y', inp == 'Y']):
+	webbrowser.open(urlpu)
