@@ -1,7 +1,5 @@
-# SomeFunPython
-Some scripts by me. Just for fun.
+# PondiUni-CLI-NewsFeed
 
-#### * punews.py 
 It scrapes the Pondicherry University website News Archive of the current 
 month and brings the latest feed to the terminal.
-It requires BeautifulSoup and pandas.
+It requires the modules BeautifulSoup and pandas to installed along with Python.
